@@ -432,8 +432,8 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Maestros</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">Registrar/Editar</a></li>
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Basic examples</a></li>
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Lista de Maestros</a></li>
 
 						<!-- /components -->
 
@@ -534,6 +534,7 @@
 				<div class="card">
 					<div class="card-header header-elements-inline">
 						<h5 class="card-title">Lista de Maestros</h5>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_scrollable">Registrar <i class="icon-play3 ml-2"></i></button></td>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -868,6 +869,108 @@
 				<!-- Pagination types -->
 
 				<!-- /pagination types -->
+
+	            <!-- Scrollable modal -->
+				<div id="modal_scrollable" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-dialog-scrollable">
+						<div class="modal-content">
+							<div class="modal-header pb-3">
+								<h5 class="modal-title">Maestro</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body py-0">
+										<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Apellidos:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>						
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Repetir Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Cuenta de Correo Electronico:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Direccion:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Edad:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Genero:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Salario Aprox.:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Celular:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+								<p></p>
+							</div>
+
+							<div class="modal-footer pt-3">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn bg-primary">Enviar</button>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- /scrollable modal -->
+
 
 
 				<!-- State saving -->

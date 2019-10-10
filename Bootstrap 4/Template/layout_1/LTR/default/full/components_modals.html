@@ -432,7 +432,8 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Maestros</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">Registrar/Editar</a></li>
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Lista de Maestros</a></li>
 
 						<!-- /components -->
 
@@ -532,7 +533,7 @@
 				<!-- Basic modals -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Registrar/Editar Maestros</h5>
+						<h5 class="card-title">Editar Maestros</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -549,12 +550,11 @@
 					<div class="table-responsive">
 						<table class="table">
 							<tbody>
-
 								<tr>
-									<td>Registrar</td>
+									<td></td>
 									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_scrollable">Launch <i class="icon-play3 ml-2"></i></button></td>
-									<td>Presiona el icono para Registrar un Maestro</td>
-								</tr>
+									<td>Presiona el icono para Editar un Maestro</td>
+								</tr>								
 
 							</tbody>
 						</table>
@@ -593,76 +593,92 @@
 					<div class="modal-dialog modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header pb-3">
-								<h5 class="modal-title">Registrar</h5>
+								<h5 class="modal-title">Rellena los campos a Editar</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
 							<div class="modal-body py-0">
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Nombre:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="José Abrham">
-											</div>
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Apellidos:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Gonzalez">
-											</div>
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Correo Electronico:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="">
-											</div>
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Dirección:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="">
-											</div>											
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Celular:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="834-223-1222">
-											</div>
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Experiencia:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="">
-											</div>
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Contraseña:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Ingresa una contraseña">
-											</div>	
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Repetir contraseña:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Ingresa una contraseña">
-											</div>	
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Edad:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Ingresa tu edad">
-											</div>
-							<div class="modal-body py-0">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Genero:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Hombre o Mujer">
-											</div>
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Aura">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Apellidos:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="Hard">
+										</div>
+									</div>						
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="haurahard0123">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Repetir Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="haurahard0123">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Cuenta de Correo Electronico:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="haura_hd@hotmail.com">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Direccion:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="16 Anaya">
+										</div>
+									</div>
+
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Edad:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="27">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Genero:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="Mujer">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Salario Aprox.:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="$10,000">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Celular:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" placeholder="8347771290">
+										</div>
+									</div>
 								<p></p>
 							</div>
 
 							<div class="modal-footer pt-3">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Registrar</button>
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn bg-primary">Listo</button>
 
 
 
@@ -670,6 +686,7 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- /scrollable modal -->
 
 
