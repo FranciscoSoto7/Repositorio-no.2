@@ -1,1 +1,1 @@
-ren *.php *.html
+ren *.html *.php
